@@ -296,33 +296,19 @@ const quizData = [
     title: "Психологические тесты",
     subcategories: [
       {
-        title: "Тест на профориентацию",
+        title: "Тест на умение решать конфликты",
         questions: [
           {
-            questionText: "Какую профессию вы бы выбрали?",
+            questionText:
+              "Коллега часто поддевает Вас, как лучше реагировать на такое поведение?",
             answerOptions: [
-              { answerText: "Инженер", isCorrect: false },
-              { answerText: "Врач", isCorrect: false },
-              { answerText: "Учитель", isCorrect: false },
-              { answerText: "Юрист", isCorrect: false },
+              { answerText: "уволиться с работы", isCorrect: false },
+              { answerText: "пожаловаться руководителю", isCorrect: false },
+              { answerText: "парировать атаку", isCorrect: true },
+              { answerText: "расплакаться", isCorrect: false },
             ],
           },
-          // Вопросы для теста на профориентацию
-        ],
-      },
-      {
-        title: "Тест на тип личности",
-        questions: [
-          {
-            questionText: "Как вы предпочитаете проводить свободное время?",
-            answerOptions: [
-              { answerText: "Читать книги", isCorrect: false },
-              { answerText: "Проводить время с друзьями", isCorrect: false },
-              { answerText: "Заниматься спортом", isCorrect: false },
-              { answerText: "Смотреть фильмы", isCorrect: false },
-            ],
-          },
-          // вопросы для теста на тип личности
+          // Вопросы для теста на умение решать конфликты
         ],
       },
     ],
@@ -342,6 +328,24 @@ const quizData = [
               { answerText: "Быстро", isCorrect: false },
             ],
           },
+          {
+            questionText: "Какое слово является глаголом?",
+            answerOptions: [
+              { answerText: "Нечто", isCorrect: false },
+              { answerText: "Красивый", isCorrect: false },
+              { answerText: "Рисовать", isCorrect: true },
+              { answerText: "Вечер", isCorrect: false },
+            ],
+          },
+          {
+            questionText: "Какое слово является прилагательным?",
+            answerOptions: [
+              { answerText: "Хороший", isCorrect: true },
+              { answerText: "Медленно", isCorrect: false },
+              { answerText: "Идти", isCorrect: false },
+              { answerText: "Утро", isCorrect: false },
+            ],
+          },
           // вопросы по грамматике
         ],
       },
@@ -355,6 +359,33 @@ const quizData = [
               { answerText: "Привет", isCorrect: true },
               { answerText: "Превет", isCorrect: false },
               { answerText: "Приветт", isCorrect: false },
+            ],
+          },
+          {
+            questionText: "Выберите правильный вариант написания слов...",
+            answerOptions: [
+              { answerText: "Цирк, циган, цыпленок, циклон", isCorrect: false },
+              { answerText: "Цирк, цыган, ципленок, цыклон", isCorrect: false },
+              { answerText: "Цырк, цыган, цыпленок, циклон", isCorrect: false },
+              { answerText: "Цирк, цыган, цыпленок, циклон", isCorrect: true },
+            ],
+          },
+          {
+            questionText:
+              "Как проверить написание безударной гласной буквы в слове?",
+            answerOptions: [
+              { answerText: "Это нельзя проверить", isCorrect: false },
+              {
+                answerText:
+                  "Нужно подобрать однокоренное слово или изменить форму данного слова так, чтобы корневой гласный оказался под ударением.",
+                isCorrect: true,
+              },
+              {
+                answerText:
+                  "Нужно подобрать похожее по смыслу слово и написать как в этом слове",
+                isCorrect: false,
+              },
+              { answerText: "Посмотреть в словаре", isCorrect: false },
             ],
           },
           // вопросы по орфографии
@@ -377,6 +408,25 @@ const quizData = [
               { answerText: "Антон Чехов", isCorrect: false },
             ],
           },
+          {
+            questionText: "Героем какого произведения является Степан Плюшкин?",
+            answerOptions: [
+              { answerText: "Евгений Онегин", isCorrect: false },
+              { answerText: "Бедная Лиза", isCorrect: false },
+              { answerText: "Мертвые души", isCorrect: true },
+              { answerText: "Горе от ума", isCorrect: false },
+            ],
+          },
+          {
+            questionText:
+              "Перу какого русского писателя принадлежит повесть 'Пиковая дама'?",
+            answerOptions: [
+              { answerText: "Н.Гоголь", isCorrect: false },
+              { answerText: "М.Лермонтов", isCorrect: false },
+              { answerText: "А.Пушкин", isCorrect: true },
+              { answerText: "И.Гончаров", isCorrect: false },
+            ],
+          },
           // вопросы по русской литературе
         ],
       },
@@ -384,7 +434,7 @@ const quizData = [
         title: "Зарубежная литература",
         questions: [
           {
-            questionText: 'Кто написал "Гамлета"?',
+            questionText: 'Кто написал произведение "Гамлет"?',
             answerOptions: [
               { answerText: "Уильям Шекспир", isCorrect: true },
               { answerText: "Чарльз Диккенс", isCorrect: false },
