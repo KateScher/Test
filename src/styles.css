@@ -1,0 +1,150 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainTitle {
+  font-size: 5em;
+  color: rgb(171, 20, 138);
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mainTitle:hover {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 #ccc,
+                0 7px 0 #ccc, 0 8px 0 #ccc,
+                0 9px 0 #ccc, 0 10px 0 #ccc,
+                0 11px 0 #ccc, 0 12px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 55px;
+}
+
+.category-list button {
+  min-width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color:  #0d0b95;
+  transition: background-color 0.3s;
+}
+
+.category-list button:hover {
+  background-color: deepskyblue;
+}
+
+.subcategory-list {
+  gap: 10px;
+  display: flex;
+  margin: 15px 10px;
+  padding: 23px 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  color: coral;
+  background-color: lightsteelblue;
+  font-weight: 700;
+  padding: 38px 50px;
+  font-size: 21px;
+  border-radius: 5px;
+  border: 3px solid #090f91;
+}
+
+.answer-section {
+  display: flex;
+  gap: 20px;
+}
+
+.question-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 30px;
+}
+
+.question-text {
+  color: #0015ff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+  gap: 20px;
+}
+
+.yourResult {
+  color: #df7ecd;
+  border: 2px dashed #ccc;
+  padding: 18px 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9b99a0;
+}
+
+.allList {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  background-color: #0c8777;
+}
+
+.link {
+  text-decoration: none;
+  color: darkred;
+  font-weight: 800;
+}
+
+.link:hover {
+  color: rgb(212, 25, 177);
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  color: #e56e03
+}
+
+.newsParag {
+  display: flex;
+  margin-top: 30px;
+  font-weight: 700;
+}
