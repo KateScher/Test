@@ -1,11 +1,10 @@
 import React from "react";
-import { Component } from "react";
 import "../styles.css";
 
 function Contacts() {
   return (
-    <div>
-      <p>г.Москва</p>
+    <div className="address">
+      <p>г.Челябинск</p>
     </div>
   );
 }
