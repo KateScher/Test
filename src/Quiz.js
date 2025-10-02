@@ -3,13 +3,20 @@ import quizData from "./data";
 import QuizList from "./QuizList";
 
 const Quiz = () => {
+  // текущая выбранная категория тестов
   const [currentCategory, setCurrentCategory] = useState(null);
+  // текущая выбранная подкатегория тестов
   const [currentSubcategory, setCurrentSubcategory] = useState(null);
+  // индекс текущего вопроса
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  // кол-во прав.ответов
   const [score, setScore] = useState(0);
+  // флаг отображения рез-тов
   const [showResults, setShowResults] = useState(false);
+  //массив объектов с ответами поль-ля
   const [userAnswers, setUserAnswers] = useState([]);
 
+  // обработчик клика по варианту ответа, обновляет счет, сохраняет ответ и управляет переходом к сл.вопросу или отображением рез-тов.
   const handleAnswerOptionClick = (isCorrect, questionText) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -23,6 +30,7 @@ const Quiz = () => {
     }
   };
 
+  // обрабатывает выбор категории теста, сбрасывает состояние для начала нового теста
   const handleCategoryClick = (category) => {
     setCurrentCategory(category);
     setCurrentSubcategory(null);
@@ -32,6 +40,7 @@ const Quiz = () => {
     setUserAnswers([]);
   };
 
+  // обрабатывает выбор подкатегории теста, сбрасывает состояние для начала нового теста
   const handleSubcategoryClick = (subcategory) => {
     setCurrentSubcategory(subcategory);
     setCurrentQuestionIndex(0);
