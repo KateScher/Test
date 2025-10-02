@@ -104,7 +104,7 @@ button {
   display: flex;
   list-style: none;
   font-size: 30px;
-  background-color: #0c8777;
+  background-color: rgba(86, 113, 149, 0.5);
 }
 
 .link {
